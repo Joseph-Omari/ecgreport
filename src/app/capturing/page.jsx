@@ -23,7 +23,7 @@ const page = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (!meterNumber) {
-      alert("meter number is reqquired");
+      alert("meter number is required");
       return;
     }
     try {
@@ -49,7 +49,8 @@ const page = () => {
         }),
       });
       if (res.ok) {
-        router.push("/");
+        router.push("/capturing");
+        alert("Hurray!! Data Successfully Captured");
       } else {
         throw new Error("Failed to Add data");
       }
@@ -239,7 +240,7 @@ const page = () => {
             type="submit"
             className="bg-green-500 p-4 rounded-md text-white"
           >
-            Send Collected Data{" "}
+            Send Collected Data
           </button>
         </div>
       </form>
