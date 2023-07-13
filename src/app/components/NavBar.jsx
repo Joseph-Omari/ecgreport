@@ -9,7 +9,10 @@ const NavBar = () => {
           {" "}
           ECG K.S
         </Link>
-        <Link href={"/capture"} className="font-semibold text-xl"> Capture Report</Link>
+        <Link href={"/capturing"} className="font-semibold text-xl">
+          {" "}
+          Capture Report
+        </Link>
       </nav>
     </div>
   );
