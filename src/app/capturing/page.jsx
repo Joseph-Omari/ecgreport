@@ -52,8 +52,9 @@ const page = () => {
         }
       );
       if (res.ok) {
-        router.push("/");
+        // router.push("/");
         alert("Hurray!! Data Successfully Captured");
+        document.getElementById("myForm").reset();
       } else {
         throw new Error("Failed to Add data");
       }
@@ -64,14 +65,14 @@ const page = () => {
 
   return (
     <div className="p-4 w-3xl md:w-screen md:flex justify-center ">
-      <form onSubmit={handleSubmit} className="space-y-2">
+      <form onSubmit={handleSubmit} id="myForm" className="space-y-2">
         <div className="flex justify-between bg-slate-400 p-2 rounded-md">
           <h1>Reporting Group:</h1>
           <select
             name=""
             id=""
             className="p-1"
-            onChange={(e) => setIdType(e.target.value)}
+            onChange={(e) => setGroupNumber(e.target.value)}
             value={idType}
           >
             <option value="Group 1">Group 1</option>
