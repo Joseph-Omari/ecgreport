@@ -75,7 +75,6 @@ const page = () => {
             onChange={(e) => setIdType(e.target.value)}
             value={idType}
           >
-            <option label="None"></option>
             <option value="Group 1">Group 1</option>
             <option value="Group 2">Group 2</option>
             <option value="Group 3">Group 3</option>
@@ -148,9 +147,12 @@ const page = () => {
           <input
             onChange={(e) => setMeterNumber(e.target.value)}
             value={meterNumber}
-            type="number"
+            type="tel"
             placeholder="191043225"
             className="rounded-r-md p-1"
+            min={7}
+            max={10}
+            required
           />
         </div>
 
@@ -159,7 +161,7 @@ const page = () => {
           <input
             onChange={(e) => setReadings(e.target.value)}
             value={readings}
-            type="number"
+            type="tel"
             placeholder="12345"
             className="rounded-r-md p-1"
           />
