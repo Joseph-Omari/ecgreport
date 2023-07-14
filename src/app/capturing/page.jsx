@@ -54,6 +54,7 @@ const page = () => {
       if (res.ok) {
         router.push("/capturing");
         alert("Hurray!! Data Successfully Captured");
+        location.reload();
       } else {
         throw new Error("Failed to Add data");
       }
