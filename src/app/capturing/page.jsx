@@ -97,7 +97,7 @@ const page = () => {
         <div className="flex justify-between bg-slate-400 p-2 rounded-md items-center">
           <h1>Customer Name:</h1>
           <input
-            onChange={(e) => setCusContact(e.target.value)}
+            onChange={(e) => setCusName(e.target.value)}
             value={cusName}
             type="text"
             placeholder="ABC"
