@@ -4,28 +4,40 @@ import Logo from "public/logo.PNG";
 
 export default function Home() {
   return (
-    <div className="">
-      <h1 className="text-3xl text-center text-red-600 font-bold">
-        Welcome to the ECG field meter capturing system
-      </h1>
-
-      <div className="text-2xl  flex flex-col items-center justify-center">
-        <Link href={"/report"} className="font-bold text-blue-500">
-          View Capturing Data
-        </Link>
-        <h1 className="text-base text-red-600">
-          Only viewed by capturing team
-        </h1>
+    <div>
+      <div className="text-2xl mx-auto font-bold text-center bg-yellow-500 max-w-xl p-2">
+        <h1>ECG - KASOA SOUTH REPORT SYSTEM</h1>
+        <h1>User Login</h1>
       </div>
+      <div className="bg-red-600 p-1 max-w-xl mx-auto"></div>
 
-      <div className="flex flex-col items-center justify-center mx-auto mt-10">
-        <Image
-          src={Logo}
-          alt="ecgLogo"
-          className="flex justify-center  w-52 drop-shadow-lg animate-bounce"
-        />
-        <h1 className="font-bold text-2xl">KASOA SOUTH DISTRICT</h1>
-      </div>
+      <form
+        action=""
+        className="bg-blue-700 text-white text-2xl mx-auto max-w-xl p-4 flex items-center justify-center flex-col space-y-8"
+      >
+        <div className="space-x-6">
+          <label htmlFor="" className=" text-2xl font-semibold ">
+            Username
+          </label>
+          <input type="text" className="rounded-md p-2  " />
+        </div>
+
+        <div className="space-x-6">
+          <label htmlFor="" className=" text-2xl font-semibold ">
+            Password
+          </label>
+          <input type="text" className="rounded-md p-2  " />
+        </div>
+
+        <div>
+          <button className="bg-yellow-600 rounded-md p-1 px-6 font-semibold">
+            Login
+          </button>
+        </div>
+      </form>
     </div>
   );
 }
+
+
+
