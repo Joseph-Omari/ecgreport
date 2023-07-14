@@ -23,7 +23,17 @@ export default function report() {
       <div className="md:hidden h-[70vh] flex justify-center items-center text-red-800 text-3xl font-bold text-center">
         <h1>Viewed by Management Team Only</h1>
       </div>
-      
+
+      <div className="hidden md:block">
+        <div className="p-4 mx-auto  justify-center text-center font-bold text-red-700 text-2xl">
+          <h1>Report Recieved from Field</h1>
+        </div>
+
+        <div className="bg-slate-500 p-4 space-y-2 gap-4 text-left">
+          
+        </div>
+
+      </div>
     </div>
   );
 }
