@@ -95,13 +95,13 @@ const page = () => {
         </div>
         <div className="flex justify-between bg-slate-400 p-2 rounded-md items-center">
           <h1>Customer Name:</h1>
-          <input
+          {/* <input
             onhange={(e) => setCusName(e.target.value)}
             value={cusName}
             type=""
             placeholder="Customer Name"
             className="rounded-r-md p-1"
-          />
+          /> */}
         </div>
 
         <div className="flex justify-between bg-slate-400 p-2 rounded-md items-center">
@@ -150,8 +150,8 @@ const page = () => {
             type="tel"
             placeholder="191043225"
             className="rounded-r-md p-1"
-            min={7}
-            max={10}
+            minLength={7}
+            maxLength={10}
             required
           />
         </div>
