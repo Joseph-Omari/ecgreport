@@ -95,6 +95,13 @@ const page = () => {
         </div>
         <div className="flex justify-between bg-slate-400 p-2 rounded-md items-center">
           <h1>Customer Name:</h1>
+          <input
+            onChange={(e) => setIdNumber(e.target.value)}
+            value={groupNumber}
+            type="text"
+            placeholder="ABC"
+            className="rounded-r-md p-1"
+          />
         </div>
 
         <div className="flex justify-between bg-slate-400 p-2 rounded-md items-center">
