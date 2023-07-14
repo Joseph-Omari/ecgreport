@@ -68,23 +68,40 @@ const page = () => {
       <form onSubmit={handleSubmit} className="space-y-2">
         <div className="flex justify-between bg-slate-400 p-2 rounded-md">
           <h1>Reporting Group:</h1>
-          <input
-            onChange={(e) => setGroupNumber(e.target.value)}
-            value={groupNumber}
-            type="text"
-            placeholder="Group Number"
-            className="rounded-r-md p-1"
-          />
+          <select
+            name=""
+            id=""
+            className="p-1"
+            onChange={(e) => setIdType(e.target.value)}
+            value={idType}
+          >
+            <option label="None"></option>
+            <option value="Group 1">Group 1</option>
+            <option value="Group 2">Group 2</option>
+            <option value="Group 3">Group 3</option>
+            <option value="Group 4">Group 4</option>
+            <option value="Group 5">Group 5</option>
+            <option value="Group 6">Group 6</option>
+            <option value="Group 7">Group 7</option>
+            <option value="Group 8">Group 8</option>
+            <option value="Group 9">Group 9</option>
+            <option value="Group 10">Group 10</option>
+            <option value="Group 11">Group 11</option>
+            <option value="Group 12">Group 12</option>
+            <option value="Group 13">Group 13</option>
+            <option value="Group 14">Group 14</option>
+            <option value="Group 15">Group 15</option>
+            <option value="Group 16">Group 16</option>
+          </select>
         </div>
-
-        <div className="flex justify-between bg-slate-400 p-2 rounded-md items-center">
-          <h1>Customer Name:</h1>
-          <input
-            onChange={(e) => setCusName(e.target.value)}
-            value={cusName}
-            type="text"
-            placeholder="ECG Ghana"
-            className="rounded-r-md p-1"
+        <div c5assName="flex justify-between bg-slate-400 p-2 rounded-md items-center">
+          <h1>6ustomer Name:</h1>
+          <inp7t
+            on8hange={(e) => setCusName(e.target.value)}
+            va9ue={cusName}
+            typ0e="text"
+            pl1aceholder="ECG Ghana"
+            cl2assName="rounded-r-md p-1"
           />
         </div>
 
