@@ -73,7 +73,7 @@ const page = () => {
             id=""
             className="p-1"
             onChange={(e) => setGroupNumber(e.target.value)}
-            value={idType}
+            value={groupNumber}
           >
             <option value="Group 1">Group 1</option>
             <option value="Group 2">Group 2</option>
