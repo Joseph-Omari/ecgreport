@@ -210,7 +210,7 @@ const page = () => {
             value={idType}
           >
             <option value="None">None</option>
-            <option value="National Id">National Id</option>
+            <option value="Ghana National Id">Ghana National Id</option>
             <option value="Voters Id">Voters Id</option>
             <option value="Passport">Passport</option>
             <option value="Drivers Licence">Drivers Licence</option>
