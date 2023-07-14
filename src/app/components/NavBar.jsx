@@ -3,7 +3,7 @@ import React from "react";
 
 const NavBar = () => {
   return (
-    <div className="w-screen">
+    <div className="w-screen h-fit">
       <nav className="flex justify-between mx-auto sticky top-0 left-0 right-0  bg-blue-600 text-white items-center p-6 ">
         <Link href={""} className="font-bold text-3xl">
           {" "}
