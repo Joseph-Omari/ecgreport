@@ -94,14 +94,14 @@ const page = () => {
             <option value="Group 16">Group 16</option>
           </select>
         </div>
-        <div c5assName="flex justify-between bg-slate-400 p-2 rounded-md items-center">
-          <h1>6ustomer Name:</h1>
-          <inp7t
-            on8hange={(e) => setCusName(e.target.value)}
-            va9ue={cusName}
-            typ0e="text"
-            pl1aceholder="ECG Ghana"
-            cl2assName="rounded-r-md p-1"
+        <div className="flex justify-between bg-slate-400 p-2 rounded-md items-center">
+          <h1>Customer Name:</h1>
+          <input
+            onhange={(e) => setCusName(e.target.value)}
+            value={cusName}
+            type="text"
+            placeholder="ECG Ghana"
+            className="rounded-r-md p-1"
           />
         </div>
 
