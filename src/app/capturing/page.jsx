@@ -27,27 +27,30 @@ const page = () => {
       return;
     }
     try {
-      const res = await fetch("http://localhost:3000/api/Field", {
-        method: "POST",
-        Headers: {
-          "Content-type": "application/json",
-        },
-        body: JSON.stringify({
-          groupNumber,
-          cusName,
-          cusContact,
-          tarrifClass,
-          activity,
-          meterNumber,
-          readings,
-          anomaly,
-          flatRate,
-          digitalAddress,
-          idType,
-          idNumber,
-          remarks,
-        }),
-      });
+      const res = await fetch(
+        "https://ecgreport-joseph-omari.vercel.app/api/Field",
+        {
+          method: "POST",
+          Headers: {
+            "Content-type": "application/json",
+          },
+          body: JSON.stringify({
+            groupNumber,
+            cusName,
+            cusContact,
+            tarrifClass,
+            activity,
+            meterNumber,
+            readings,
+            anomaly,
+            flatRate,
+            digitalAddress,
+            idType,
+            idNumber,
+            remarks,
+          }),
+        }
+      );
       if (res.ok) {
         router.push("/capturing");
         alert("Hurray!! Data Successfully Captured");
