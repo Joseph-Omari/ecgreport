@@ -99,7 +99,7 @@ const page = () => {
             onhange={(e) => setCusName(e.target.value)}
             value={cusName}
             type="text"
-            placeholder="ECG Ghana"
+            placeholder="Customer Name"
             className="rounded-r-md p-1"
           />
         </div>
