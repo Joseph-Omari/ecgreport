@@ -52,9 +52,8 @@ const page = () => {
         }
       );
       if (res.ok) {
-        router.push("/capturing");
-        alert("Hurray!! Data Successfully Captured");
         router.push("/");
+        alert("Hurray!! Data Successfully Captured");
       } else {
         throw new Error("Failed to Add data");
       }
