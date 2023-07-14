@@ -19,14 +19,14 @@ export default function Home() {
           <label htmlFor="" className=" text-2xl font-semibold ">
             Username
           </label>
-          <input type="text" className="rounded-md p-2 text-black " />
+          <input type="text" className="rounded-md p-1 text-black " />
         </div>
 
         <div className="space-x-6">
           <label htmlFor="" className=" text-2xl font-semibold ">
             Password
           </label>
-          <input type="password" className="rounded-md p-2 text-black" />
+          <input type="password" className="rounded-md p-1 text-black" />
         </div>
 
         <div>
