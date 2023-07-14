@@ -98,7 +98,7 @@ const page = () => {
           <input
             onhange={(e) => setCusName(e.target.value)}
             value={cusName}
-            type="text"
+            type=""
             placeholder="Customer Name"
             className="rounded-r-md p-1"
           />
