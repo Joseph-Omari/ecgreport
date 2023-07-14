@@ -10,7 +10,7 @@ export default function Home() {
       </h1>
 
       <div className="text-2xl  flex flex-col items-center justify-center">
-        <Link href={"report"} className="font-bold text-blue-500">View Capturing Data</Link>
+        <Link href={"/report"} className="font-bold text-blue-500">View Capturing Data</Link>
         <h1 className="text-base text-red-600">Only viewed by capturing team</h1>
       </div>
 
