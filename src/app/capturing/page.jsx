@@ -93,7 +93,7 @@ const page = () => {
             <option value="Group 16">Group 16</option>
           </select>
         </div>
-        
+
         <div className="flex justify-between bg-slate-400 p-2 rounded-md items-center">
           <h1>Customer Name:</h1>
           <input
