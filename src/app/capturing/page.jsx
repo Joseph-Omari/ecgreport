@@ -53,7 +53,7 @@ const page = () => {
       );
       if (res.ok) {
         // router.push("/");
-        alert("Hurray!! Data Successfully Captured");
+        console.log("Hurray!! Data Successfully Captured");
         document.getElementById("myForm").reset();
       } else {
         throw new Error("Failed to Add data");
