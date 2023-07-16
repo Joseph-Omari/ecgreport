@@ -70,6 +70,7 @@ const page = () => {
           <h1>Reporting Group:</h1>
           <select
             name="groupnumber"
+            required
             id=""
             className="p-1"
             onChange={(e) => setGroupNumber(e.target.value)}

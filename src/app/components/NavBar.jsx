@@ -3,19 +3,18 @@ import Link from "next/link";
 import React, { useState } from "react";
 import { router } from "next/navigation";
 
-
-
 const NavBar = () => {
   let path = router;
   let show = true;
   // console.log(path)
 
-  if (path === "/") {
-    show = false;
-    // alert(path)
-    // console.log(path);
-  } else {
-  }
+  // if (path === "/") {
+  //   show = false;
+  //   // alert(path)
+  //   // console.log(path);
+  // } else {
+  //   show = true;
+  // }
 
   return (
     <div className="w-screen h-fit">
@@ -25,9 +24,9 @@ const NavBar = () => {
           ECG K.S
         </Link>
 
-        {show && <Link href={"/"} className="font-semibold text-xl">
+        <Link href={"/"} className="font-semibold text-xl">
           LogOut
-        </Link>}
+        </Link>
       </nav>
     </div>
   );
