@@ -7,14 +7,16 @@ export default function page() {
   return (
     <div className="">
       <h1 className="text-3xl text-center text-red-600 font-bold">
-        Welcome to the ECG field meter capturing system
+        Welcome to the ECG field meter report capturing system
       </h1>
 
       <div className="text-2xl  flex flex-col items-center justify-center">
         <Link href={"/capturing"} className="font-bold text-blue-500">
           Capture Data
         </Link>
-        <h1 className="text-base text-red-600">heloow word</h1>
+        <h1 className="text-base text-red-600">
+          Click the link above to capture customer
+        </h1>
       </div>
 
       <div className="flex flex-col items-center justify-center mx-auto mt-10">

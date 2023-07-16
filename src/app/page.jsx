@@ -17,7 +17,7 @@ export default function Home() {
     e.preventDefault();
 
     if (password === dpassword && username === dusername) {
-      router.push("/capturing");
+      router.push("/report");
       alert("Login Successful");
     } else {
       alert("Incorrect Login Credentials");
