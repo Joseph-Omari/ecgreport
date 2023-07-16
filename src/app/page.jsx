@@ -44,11 +44,12 @@ export default function Home() {
         className="bg-blue-700 text-white text-md md:text-xl mx-auto  p-6 flex items-center justify-center flex-col space-y-8"
       >
         <div className="space-x-6">
-          <label htmlFor="" className=" text-2xl font-semibold ">
+          <label htmlFor="username" className=" text-2xl font-semibold ">
             Username
           </label>
           <input
             type="text"
+            id="username"
             required
             onChange={(e) => setUsername(e.target.value)}
             className="rounded-md p-1 text-black "
@@ -56,11 +57,12 @@ export default function Home() {
         </div>
 
         <div className="space-x-6">
-          <label htmlFor="" className=" text-2xl font-semibold ">
+          <label htmlFor="password" className=" text-2xl font-semibold ">
             Password
           </label>
           <input
             type="password"
+            id="password"
             required
             onChange={(e) => setPassword(e.target.value)}
             className="rounded-md p-1 text-black"
