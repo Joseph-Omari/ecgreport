@@ -27,8 +27,7 @@ const page = () => {
       return;
     }
     try {
-      const res = await fetch(
-        "https://ecgreport-joseph-omari.vercel.app/api/Field",
+      const res = await fetch("https://ecgreport-joseph-omari.vercel.app/api/Field",
         {
           method: "POST",
           Headers: {
