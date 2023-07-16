@@ -27,33 +27,30 @@ const page = () => {
       return;
     }
     try {
-      const res = await fetch(
-        "/api/Field",
-        {
-          method: "POST",
-          Headers: {
-            // "Access-Control-Allow-Headers": "Content-Type",
-            // "Access-Control-Allow-Origin": "*",
-            // "Access-Control-Allow-Methods": "OPTIONS,POST,GET,PATCH",
-            "Content-type": "application/json",
-          },
-          body: JSON.stringify({
-            groupNumber,
-            cusName,
-            cusContact,
-            tarrifClass,
-            activity,
-            meterNumber,
-            readings,
-            anomaly,
-            flatRate,
-            digitalAddress,
-            idType,
-            idNumber,
-            remarks,
-          }),
-        }
-      );
+      const res = await fetch("/api/Field", {
+        method: "POST",
+        Headers: {
+          // "Access-Control-Allow-Headers": "Content-Type",
+          // "Access-Control-Allow-Origin": "*",
+          // "Access-Control-Allow-Methods": "OPTIONS,POST,GET,PATCH",
+          "Content-type": "application/json",
+        },
+        body: JSON.stringify({
+          groupNumber,
+          cusName,
+          cusContact,
+          tarrifClass,
+          activity,
+          meterNumber,
+          readings,
+          anomaly,
+          flatRate,
+          digitalAddress,
+          idType,
+          idNumber,
+          remarks,
+        }),
+      });
       if (res.ok) {
         router.push("/report");
         alert("Hurray!! Data Successfully Captured");
@@ -78,6 +75,7 @@ const page = () => {
             onChange={(e) => setGroupNumber(e.target.value)}
             value={groupNumber}
           >
+            <option value="">Select group</option>
             <option value="Group 1">Group 1</option>
             <option value="Group 2">Group 2</option>
             <option value="Group 3">Group 3</option>
@@ -104,7 +102,8 @@ const page = () => {
             value={cusName}
             type="text"
             name="cusname"
-            placeholder="ABC"
+            required
+            placeholder="The occupant"
             className="rounded-r-md p-1"
           />
         </div>
@@ -129,6 +128,7 @@ const page = () => {
             name="tc"
             id=""
             className="p-1"
+            required
             onChange={(e) => setTarrifClass(e.target.value)}
             value={tarrifClass}
           >
@@ -211,8 +211,9 @@ const page = () => {
           <input
             onChange={(e) => setFlatRate(e.target.value)}
             value={flatRate}
+            required
             type="number"
-            placeholder=""
+            placeholder="Number of rooms"
             name="flatrate"
             className="rounded-r-md p-1"
           />
@@ -223,6 +224,7 @@ const page = () => {
           <input
             onChange={(e) => setDigitalAddress(e.target.value)}
             value={digitalAddress}
+            required
             type="text"
             placeholder="ABC"
             name="digiaddress"
@@ -265,6 +267,7 @@ const page = () => {
             onChange={(e) => setRemarks(e.target.value)}
             value={remarks}
             type="text"
+            required
             placeholder="ABC"
             name="remarks"
             className="rounded-r-md p-1"
