@@ -133,6 +133,7 @@ const page = () => {
             onChange={(e) => setTarrifClass(e.target.value)}
             value={tarrifClass}
           >
+            <option value="">Select Tariff Class</option>
             <option value="Residential">Residential</option>
             <option value="Non Residential">Non Residential</option>
           </select>
