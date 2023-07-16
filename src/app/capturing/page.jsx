@@ -32,9 +32,9 @@ const page = () => {
         {
           method: "POST",
           Headers: {
-            "Access-Control-Allow-Headers": "Content-Type",
-            "Access-Control-Allow-Origin": "*",
-            "Access-Control-Allow-Methods": "OPTIONS,POST,GET,PATCH",
+            // "Access-Control-Allow-Headers": "Content-Type",
+            // "Access-Control-Allow-Origin": "*",
+            // "Access-Control-Allow-Methods": "OPTIONS,POST,GET,PATCH",
             "Content-type": "application/json",
           },
           body: JSON.stringify({
@@ -62,6 +62,7 @@ const page = () => {
       }
     } catch (error) {
       alert(error);
+      // console.log(error)
     }
   };
 
