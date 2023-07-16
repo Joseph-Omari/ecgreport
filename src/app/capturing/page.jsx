@@ -27,10 +27,15 @@ const page = () => {
       return;
     }
     try {
-      const res = await fetch("https://ecgreport-joseph-omari.vercel.app/api/Field",
+      const res = await fetch(
+        "https://ecgreport-joseph-omari.vercel.app/api/Field",
         {
           method: "POST",
           Headers: {
+            "Access-Control-Allow-Headers": "Content-Type",
+            "Access-Control-Allow-Origin": "*",
+
+            "Access-Control-Allow-Methods": "OPTIONS,POST,GET,PATCH",
             "Content-type": "application/json",
           },
           body: JSON.stringify({
@@ -51,7 +56,7 @@ const page = () => {
         }
       );
       if (res.ok) {
-        // router.push("/");
+        router.push("/report");
         alert("Hurray!! Data Successfully Captured");
       } else {
         alert("Failed to Add data");

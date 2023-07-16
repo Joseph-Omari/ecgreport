@@ -1,6 +1,8 @@
 "use client";
 import React, { useState } from "react";
 import { useRouter } from "next/navigation";
+import Logo from "public/logo.PNG";
+import Image from "next/image";
 
 export default function Home() {
   const router = useRouter();
@@ -22,8 +24,15 @@ export default function Home() {
   };
 
   return (
-    <div className="w-fit mx-auto ">
-      <div className="text-md md:text-xl mx-auto font-bold text-center bg-yellow-500  p-6 pt-6">
+    <div className="w-fit mx-auto  ">
+      <div className="text-md md:text-xl mx-auto font-bold text-center bg-yellow-500 p-6 pt-6 rounded-t-2xl">
+        <div className="flex justify-center">
+          <Image
+            src={Logo}
+            alt="ecgLogo"
+            className="flex justify-center  w-52 drop-shadow-lg animate-bounce"
+          />
+        </div>
         <h1>ECG - KASOA SOUTH REPORT SYSTEM</h1>
         <h1>User Login</h1>
       </div>
