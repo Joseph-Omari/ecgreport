@@ -1,11 +1,11 @@
 "use client";
 import React, { useState } from "react";
-import { useRouter } from "next/navigation";
+// import { useRouter } from "next/navigation";
 import Logo from "public/logo.PNG";
 import Image from "next/image";
 
 export default function Home() {
-  const router = useRouter();
+  // const router = useRouter();
 
   const dpassword = "ecg123";
   const dusername = "ecgstaff";
@@ -17,7 +17,7 @@ export default function Home() {
     e.preventDefault();
 
     if (password === dpassword && username === dusername) {
-      router.push("/capturing");
+      // router.push("/capturing");
     } else {
       alert("Incorrect Login Credentials");
     }

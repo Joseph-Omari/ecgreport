@@ -28,13 +28,12 @@ const page = () => {
     }
     try {
       const res = await fetch(
-        "https://ecgreport-joseph-omari.vercel.app/api/Field",
+        "/api/Field",
         {
           method: "POST",
           Headers: {
             "Access-Control-Allow-Headers": "Content-Type",
             "Access-Control-Allow-Origin": "*",
-
             "Access-Control-Allow-Methods": "OPTIONS,POST,GET,PATCH",
             "Content-type": "application/json",
           },
@@ -72,7 +71,7 @@ const page = () => {
         <div className="flex justify-between bg-slate-400 p-2 rounded-md">
           <h1>Reporting Group:</h1>
           <select
-            name=""
+            name="groupnumber"
             id=""
             className="p-1"
             onChange={(e) => setGroupNumber(e.target.value)}
@@ -103,6 +102,7 @@ const page = () => {
             onChange={(e) => setCusName(e.target.value)}
             value={cusName}
             type="text"
+            name="cusname"
             placeholder="ABC"
             className="rounded-r-md p-1"
           />
@@ -114,6 +114,7 @@ const page = () => {
             onChange={(e) => setCusContact(e.target.value)}
             value={cusContact}
             type="tel"
+            name="cuscontact"
             placeholder="0243000000"
             className="rounded-r-md p-1"
             maxLength={10}
@@ -124,7 +125,7 @@ const page = () => {
         <div className="flex justify-between bg-slate-400 p-2 rounded-md items-center">
           <h1>Tariff Class:</h1>
           <select
-            name=""
+            name="tc"
             id=""
             className="p-1"
             onChange={(e) => setTarrifClass(e.target.value)}
@@ -141,6 +142,7 @@ const page = () => {
             onChange={(e) => setActivity(e.target.value)}
             value={activity}
             type="text"
+            name="activity"
             placeholder="House"
             className="rounded-r-md p-1"
           />
@@ -152,6 +154,7 @@ const page = () => {
             onChange={(e) => setMeterNumber(e.target.value)}
             value={meterNumber}
             type="tel"
+            name="meternumber"
             placeholder="191043225"
             className="rounded-r-md p-1"
             minLength={7}
@@ -166,6 +169,7 @@ const page = () => {
             onChange={(e) => setReadings(e.target.value)}
             value={readings}
             type="tel"
+            name="reading"
             placeholder="12345"
             className="rounded-r-md p-1"
           />
@@ -174,7 +178,7 @@ const page = () => {
         <div className="flex justify-between bg-slate-400 p-2 rounded-md items-center">
           <h1>Anomaly:</h1>
           <select
-            name=""
+            name="anomaly"
             id=""
             onChange={(e) => setAnomaly(e.target.value)}
             value={anomaly}
@@ -208,6 +212,7 @@ const page = () => {
             value={flatRate}
             type="number"
             placeholder=""
+            name="flatrate"
             className="rounded-r-md p-1"
           />
         </div>
@@ -219,6 +224,7 @@ const page = () => {
             value={digitalAddress}
             type="text"
             placeholder="ABC"
+            name="digiaddress"
             className="rounded-r-md p-1"
           />
         </div>
@@ -226,7 +232,7 @@ const page = () => {
         <div className="flex justify-between bg-slate-400 p-2 rounded-md items-center">
           <h1>Type of Id:</h1>
           <select
-            name=""
+            name="idtype"
             id=""
             className="p-1"
             onChange={(e) => setIdType(e.target.value)}
@@ -245,6 +251,7 @@ const page = () => {
           <input
             onChange={(e) => setIdNumber(e.target.value)}
             value={idNumber}
+            name="idcardno"
             type="text"
             placeholder="ABC"
             className="rounded-r-md p-1"
@@ -258,6 +265,7 @@ const page = () => {
             value={remarks}
             type="text"
             placeholder="ABC"
+            name="remarks"
             className="rounded-r-md p-1"
           />
         </div>
@@ -265,6 +273,7 @@ const page = () => {
         <div className="flex justify-center gap-4">
           <button
             type="submit"
+            name="btnsubmit"
             className="bg-green-500 p-4 rounded-md text-white"
           >
             Send Collected Data

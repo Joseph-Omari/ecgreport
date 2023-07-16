@@ -8,11 +8,11 @@ import { router } from "next/navigation";
 const NavBar = () => {
   let path = router;
   let show = true;
-  console.log(path)
+  // console.log(path)
 
   if (path === "/") {
     show = false;
-    alert(path)
+    // alert(path)
     // console.log(path);
   } else {
   }
@@ -25,7 +25,7 @@ const NavBar = () => {
           ECG K.S
         </Link>
 
-        {show && <Link href={""} className="font-semibold text-xl">
+        {show && <Link href={"/"} className="font-semibold text-xl">
           LogOut
         </Link>}
       </nav>
