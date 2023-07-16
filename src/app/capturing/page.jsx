@@ -30,6 +30,7 @@ const page = () => {
       const res = await fetch(
         "https://ecgreport-joseph-omari.vercel.app/api/Field",
         {
+          mode: 'no-cors',
           method: "POST",
           Headers: {
             "Content-type": "application/json",
@@ -53,13 +54,12 @@ const page = () => {
       );
       if (res.ok) {
         // router.push("/");
-        console.log("Hurray!! Data Successfully Captured");
-        document.getElementById("myForm").reset();
+        alert("Hurray!! Data Successfully Captured");
       } else {
-        throw new Error("Failed to Add data");
+        alert("Failed to Add data");
       }
     } catch (error) {
-      console.log(error);
+      alert(error);
     }
   };
 
