@@ -30,7 +30,6 @@ const page = () => {
       const res = await fetch(
         "https://ecgreport-joseph-omari.vercel.app/api/Field",
         {
-          mode: 'no-cors',
           method: "POST",
           Headers: {
             "Content-type": "application/json",
