@@ -156,7 +156,7 @@ const page = () => {
           <input
             onChange={(e) => setMeterNumber(e.target.value)}
             value={meterNumber}
-            type="tel"
+            type="text"
             name="meternumber"
             placeholder="191043225"
             className="rounded-r-md p-1"
