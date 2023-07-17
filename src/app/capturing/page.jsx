@@ -77,15 +77,15 @@ const page = () => {
             value={groupNumber}
           >
             <option value="">Select group</option>
-            <option value="Group 1">Group 1</option>
-            <option value="Group 2">Group 2</option>
-            <option value="Group 3">Group 3</option>
-            <option value="Group 4">Group 4</option>
-            <option value="Group 5">Group 5</option>
-            <option value="Group 6">Group 6</option>
-            <option value="Group 7">Group 7</option>
-            <option value="Group 8">Group 8</option>
-            <option value="Group 9">Group 9</option>
+            <option value="Group 01">Group 1</option>
+            <option value="Group 02">Group 2</option>
+            <option value="Group 03">Group 3</option>
+            <option value="Group 04">Group 4</option>
+            <option value="Group 05">Group 5</option>
+            <option value="Group 06">Group 6</option>
+            <option value="Group 07">Group 7</option>
+            <option value="Group 08">Group 8</option>
+            <option value="Group 09">Group 9</option>
             <option value="Group 10">Group 10</option>
             <option value="Group 11">Group 11</option>
             <option value="Group 12">Group 12</option>
@@ -182,10 +182,12 @@ const page = () => {
           <h1>Anomaly:</h1>
           <select
             name="anomaly"
+            required
             id=""
             onChange={(e) => setAnomaly(e.target.value)}
             value={anomaly}
           >
+            <option value="">Select anomaly</option>
             <option value="Normal">Normal</option>
             <option value="Blank Meter">Blank Meter</option>
             <option value="Burnt Meter">Burnt Meter</option>
