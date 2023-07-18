@@ -94,6 +94,7 @@ const page = () => {
             <option value="Group 15">Group 15</option>
             <option value="Group 16">Group 16</option>
             <option value="Group 17">Group 17</option>
+            <option value="Office Team">Office Team</option>
           </select>
         </div>
 
