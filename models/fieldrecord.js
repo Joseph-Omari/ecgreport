@@ -22,6 +22,6 @@ const fieldSchema = new Schema(
 );
 
 const Field =
-  mongoose.models.Field || mongoose.model("FieldReportWEDNESDAY", fieldSchema);
+  mongoose.models.Field || mongoose.model("FieldReportTHURSDAY", fieldSchema);
 
 export default Field;
