@@ -22,6 +22,6 @@ const fieldSchema = new Schema(
 );
 
 const Field =
-  mongoose.models.Field || mongoose.model("FieldReportW8D3", fieldSchema);
+  mongoose.models.Field || mongoose.model("FieldReportW8D4", fieldSchema);
 
 export default Field;
